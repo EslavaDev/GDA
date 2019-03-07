@@ -1,0 +1,49 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>DETALLES</ion-title>
+        <ion-buttons>
+                <button ion-button (click)="closemodal()">Cerrar</button>
+            </ion-buttons>
+    </ion-navbar>
+
+   
+    </ion-header>
+
+    <ion-content padding>
+
+        <div class="content">
+
+            <div class="section-description">
+
+                <section class="description">
+
+                    <ion-label class="text-descripcion">
+                        DESCRIPCION
+                    </ion-label>
+
+                    <ion-textarea class="text-area"  placeholder="Descripcion"></ion-textarea>
+
+
+                    <div>
+
+                        <ion-list>
+
+                            <ion-label>Nombre del cliente</ion-label>
+                            <ion-item>
+                                  <ion-input type="text" disabled="false"></ion-input>
+                             </ion-item>
+
+                       </ion-list>
+
+                    </div>
+
+
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </ion-content>

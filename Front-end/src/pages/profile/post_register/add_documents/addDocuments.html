@@ -1,0 +1,61 @@
+<ion-header >
+  <div class="container_logo_header">
+    <img class="img" src="./assets/imgs/logo_blue_todoak.png"/>
+  </div>
+</ion-header>
+
+<ion-content padding>
+  <div class="container-text">
+    <p class="text"> {{text}} </p>
+  </div>
+  <div class="container-text">
+    <p class="border"> {{ subtitle1 }} </p>
+  </div>
+
+  <div >
+    <ion-item *ngFor="let item of categories">
+      <ion-label> {{ item.name }} </ion-label>
+      <ion-radio mode="md" checked="false" value="go"></ion-radio>
+    </ion-item>
+  </div>
+
+  <div class="container-text">
+    <p class="border"> {{ subtitle2 }} </p>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let item of subCategories">
+      <ion-label> {{ item.sub }} </ion-label>
+      <ion-radio mode="md" checked="false" value="go"></ion-radio>
+    </ion-item>
+  </ion-list>
+
+  <div class="container-text">
+    <p class="border"> {{ subtitle3 }} </p>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Teléfono fijo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Teléfono móvil"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Ciudad residencia"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Dirección residencia"></ion-input>
+    </ion-item>
+  </ion-list>
+
+
+  <div class="container-text">
+    <p class="border"> {{ subtitle4 }} </p>
+  </div>
+  <ion-list>
+    <ion-item *ngFor="let item of documents">
+      <ion-label> {{ item.type }} </ion-label>
+      <!-- <ion-radio mode="md" checked="false" value="go"></ion-radio> -->
+    </ion-item>
+  </ion-list>
+
+</ion-content>

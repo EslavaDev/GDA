@@ -1,0 +1,26 @@
+Page-profile{
+
+    .content .btn-cambiar{
+        
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .content .btn-cambiar .btn{
+        width: 200px;
+    }
+
+    .content .photo-perfil .imagen {
+        display: flex;
+        justify-content: center;
+        margin: 2px auto;
+        width: 260px;
+    }
+
+    .imagen{
+        margin-top: 20%;
+    }
+
+}

@@ -1,0 +1,31 @@
+page-aplazar{
+
+    .content .content-justi{
+        margin-top: -2px;
+    }
+
+    .content .content-estado{
+        margin-top: -20px;
+    }
+
+    .content .content-justi .border-textarea{
+        margin-top: -10px;
+    }
+
+    .content .content-estado .border-textarea{
+        margin-top: -10px;
+    }
+
+    .border-textarea{
+        border: 1px solid;
+        width: 330px;
+    }
+
+    .content .content-justi .border-textarea, .text-area{
+        height: 110px;
+    }
+    .content .content-justi .border-textarea{
+        height: 113px;
+    }
+
+}

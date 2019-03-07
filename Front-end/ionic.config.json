@@ -1,0 +1,7 @@
+{
+  "name": "todoak-tecnico",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

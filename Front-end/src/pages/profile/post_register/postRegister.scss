@@ -1,0 +1,38 @@
+page-postRegister{
+
+  .img{
+    margin-top: 30%;
+  }
+
+  .container-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 25%;
+  }
+
+  .text{
+    font-size: 17px;
+    color: #A6ACAF;
+    font-weight: bold;
+    margin-bottom: 2%;
+  }
+  .text2{
+    font-size: 15px;
+    color: #A6ACAF;
+    margin-top:0px;
+  }
+
+  .container-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-ok{
+    background-color: color($colors, orange_app);
+    color:white;
+  }
+
+}

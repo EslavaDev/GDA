@@ -1,0 +1,66 @@
+<ion-header >
+  <ion-row >
+    <ion-col col-1>
+      <ion-icon (click)="goBack()" class="icon-back" name="md-arrow-back"></ion-icon>
+    </ion-col>
+    <ion-col col-10 text-center>
+      <ion-title> Registro </ion-title>
+    </ion-col>
+  </ion-row>
+  
+</ion-header>
+
+
+<ion-content padding class="container">
+
+    <div class="container_logo_header">
+        <img class="img" src="./assets/imgs/logo_blue_todoak.png" />
+   </div>
+
+
+  <ion-list class="list">
+    <form [formGroup]="user_register">
+    <div class="container_form">
+      <ion-item class="item_space">
+        <ion-input placeholder="Nombre" formControlName="name" type="text"  ></ion-input>
+      </ion-item>
+      <ion-item class="item_space">
+        <ion-input placeholder="Apellido" type="text" formControlName="lastname" ></ion-input>
+      </ion-item>
+      <ion-item class="item_space">
+          <ion-label floating>Fecha de nacimiento</ion-label>
+        <ion-input placeholder="Fecha de nacimiento" type="date" formControlName="date" ></ion-input>
+      </ion-item >
+      <ion-item class="item_space">
+        <ion-input placeholder="Cédula" type="number"  formControlName="identification"></ion-input>
+      </ion-item>
+      <ion-item class="item_space">
+        <ion-input placeholder="email" type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item class="item_space">
+        <ion-input placeholder="Contraseña" type="password" formControlName="password" ></ion-input>
+      </ion-item>
+      <ion-item class="item_space">
+        <ion-input placeholder="Confirmar Contraseña" type="password" formControlName="password2" ></ion-input>
+      </ion-item>
+    </div>
+    <ion-row padding text-center>
+      <ion-col>
+        <button (click)="postRegister(user_register.value)" class="btn_register" ion-button [disabled]="!user_register.valid"> Registrarse </button>
+      </ion-col>
+    </ion-row>
+  </form>
+  </ion-list>
+</ion-content>
+<ion-footer class="footer_auth">
+  <ion-row text-center>
+    <ion-col>
+      <span class="space-footer"> {{ footer_text1 }} </span>
+      <ion-row justify-content-center>
+        <span class="space-footer-down"> {{ footer_text2 }} </span>
+        <span class="space-footer-m"> y </span>
+        <span class="space-footer-down"> {{ footer_text3 }} </span>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-footer>

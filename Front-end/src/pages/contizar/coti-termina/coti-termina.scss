@@ -1,0 +1,49 @@
+page-cotiTermina{
+
+    .footer-left{
+        background: color($colors,orange_app);
+        font-family: Arial;
+        color: #fafafa;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        border-right: 2px solid white;
+    
+      }
+    
+      .footer-rigth{
+        background: color($colors,orange_app);
+        font-family: Arial;
+        color: #fafafa;
+        font-size: 14px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 0px;
+        justify-content: center;
+    
+      }
+
+      .contect-text{
+        font-size: 20px;
+        margin-top: 30%;
+        display:flex;
+        align-content: center;
+        text-align: center; 
+      }
+
+      .footer_app{
+        height: 9%;
+        padding: 5%;
+      }
+
+
+}
+
+
+
+
+    

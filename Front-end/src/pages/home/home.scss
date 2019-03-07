@@ -1,0 +1,16 @@
+page-home {
+  .btn-inmediato{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .btn-inmediato .btn-ion {
+    width: 45%
+  }
+
+  ion-row{
+    border-bottom: solid 2px rgb(88, 92, 105);
+    padding: 3%;
+  } 
+  
+}

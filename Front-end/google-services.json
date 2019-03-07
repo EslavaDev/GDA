@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1022589972564",
+    "firebase_url": "https://todoakrefactor.firebaseio.com",
+    "project_id": "todoakrefactor",
+    "storage_bucket": "todoakrefactor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022589972564:android:48def4a7891c8b47",
+        "android_client_info": {
+          "package_name": "com.todoak.tecnicoak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022589972564-e7v27565jrc4sts0gf6hmba7l6aav599.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pwoBbo9cLl3eB72bwuaBl9R9FftnDec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

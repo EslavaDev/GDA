@@ -1,0 +1,64 @@
+<ion-header>
+        <ion-navbar color='primary'>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title> Esperando... </ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content padding>
+          <img  class="img" src="../../../assets/imgs/logo_blue_todoak.png" alt="">
+          <ion-grid>
+              <ion-row>
+                
+                <section class="section-price">
+                    <div class="price-total">
+
+                        <ion-col col-12>
+
+                            <button ion-button class="btn-actualizar" (click)="updateButton()" >
+                                Actualizar Precio
+
+                            </button>
+
+                        </ion-col>
+
+                        <ion-col col-6>
+                            <ion-label class="label-total">Total</ion-label>
+                            <ion-input type="text" class="input-text" disabled="true" value="$ {{price}}"></ion-input>
+                        </ion-col>    
+                    </div>
+                </section>
+
+              </ion-row>
+          </ion-grid>
+
+       
+      </ion-content>
+      
+      <ion-footer class="footer_app" text-center>
+
+        <section class="section-footer">
+            <div class="footer"> 
+                    <ion-grid>
+                            <ion-row>
+                                
+                                    <ion-col col-6 (click)="__closed()">
+              
+                                          <p><span>Cancelar</span></p>
+              
+                                    </ion-col>
+              
+                                    <ion-col col-6 (click)="_start()">
+                                        <p><span>Empezar</span></p>
+                                    </ion-col>
+                                
+                            </ion-row>
+                        </ion-grid>
+            </div>
+        </section>
+       
+        
+      </ion-footer>
+      

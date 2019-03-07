@@ -1,0 +1,32 @@
+page-validar{
+
+    .container .img-div{
+        margin-top: 30%;    
+      }
+
+      .img-div{
+        width: 60%;
+        display: block;
+        margin: 15px auto;
+
+      }
+
+    .container .container-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-carga{
+        position: absolute;
+        font-size: x-large;
+        top: 37%;
+    }
+
+    .text-carga2{
+        position: absolute;
+        top: 60%;
+        left: 10%;
+    }
+
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Mis servicios </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <section class="section-my-service">
+    <ion-grid>
+      <ion-row>
+
+        <ion-list>
+          <div *ngFor="let servi of myservice">
+            <ion-item>
+              <h2>Cliente: {{servi.id_cliente.name}}</h2>
+              <p>Direccion: {{servi.id_cliente.address}}</p>
+              <p class= "p-red">{{servi.changeStatus}}</p>
+              <button ion-button color="primary" item-end (click)="detalles(servi)">Ver mas</button>
+              <button ion-button color="secondary"item-end (click)="_openServi(servi)">Abrir</button>
+
+            </ion-item>
+          </div>
+        </ion-list>
+      </ion-row>
+    </ion-grid>
+
+  </section>
+
+</ion-content>

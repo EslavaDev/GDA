@@ -1,0 +1,64 @@
+page-register{
+
+  ion-header{
+    margin-top: 5%;
+  }
+
+   .container{
+    position: initial !important;
+    margin-top: 5%;
+
+   }
+   
+  .icon-back{
+    color: color($colors, blue_app);
+    font-size:30px;
+    margin-left: 5%;
+  }
+
+  .toolbar-title{
+    font-size: 25px !important;
+    color: rgb(90, 93, 102) !important;
+  }
+
+  .list{
+    margin-top:10%;
+  }
+  .input-wrapper{
+    margin-top: 3%;
+  }
+
+  .btn_register{
+    background-color:color($colors, orange_app);
+    width: 60%;
+    color:white;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  }
+
+  .space-footer{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: rgb(90, 93, 102);
+    font-weight: 440;
+  }
+
+  .space-footer-down{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: #5DADE2;
+    font-weight: 440;
+    text-decoration: underline;
+  }
+
+  .space-footer-m{
+    margin: 2%;
+    color: rgb(90, 93, 102);;
+    font-weight: 440;
+  }
+
+  
+
+
+}

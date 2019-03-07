@@ -1,0 +1,108 @@
+<ion-header>
+        <ion-navbar color='primary'>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Resultado final</ion-title>
+        </ion-navbar>
+      </ion-header>
+    
+      <ion-content>
+    
+        <div class="content">
+          
+          <form>
+              <ion-grid>
+            <div class="conten-over">
+    
+    
+    
+              <section class="section-image">
+                <div class="image">
+      
+                  <ion-row>
+      
+                      <ion-col col-12>
+                          <ion-label>
+                              <span>Imagenes:</span>
+                          </ion-label>
+                      </ion-col>
+      
+                      <ion-col col-3 (click)="activeCamera()">
+      
+                        <ion-card>
+                            <ion-card-content>
+                                <ion-icon name="add-circle"></ion-icon>
+                            </ion-card-content>
+                        </ion-card>                      
+                      </ion-col>
+      
+      
+                      <ion-col col-12 *ngIf='icon' >
+      
+                          <ion-card class="card-ion" >
+                            <ion-card-content >
+                              <!-- <p *ngFor="let item of arrayImg"><img src="{{item}}" alt=""/></p> -->
+    
+                              <ion-slides pager="true" ionSlideDidChange="slideChanged()" >
+                                  <ion-slide *ngFor="let item of arrayImg">
+                                    <h1 ><img  class="class-img" src="{{item}}" alt=""/></h1>
+                                  </ion-slide>
+                              </ion-slides>
+    
+                             
+                          
+                               <ion-icon name="image" md="md-image" *ngIf='!icon'></ion-icon>
+                              
+                            </ion-card-content>
+                              
+                              
+                          </ion-card>                      
+                      </ion-col>
+                  </ion-row>
+                    
+                  </div>
+                </section>
+      
+
+
+                <section class="section-firma">
+
+                    <ion-label>Firma del cliente</ion-label>
+                    <div class="firma">
+                         <signature-pad [options]="signaturePadOptions" (onBeginEvent)="drawStart()" (onEndEvent)="drawComplete()"></signature-pad>
+
+                    </div>
+
+                    <div>
+                        <ion-grid>
+                            <ion-row>
+                                <ion-col col-6>
+                                        <button ion-button color="danger" (click)="drawClear()">Reiniciar</button>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+
+                </section>
+
+
+    
+    
+                
+      
+            </div>
+    
+    
+        
+            </ion-grid>
+              
+          </form>
+        </div>
+      </ion-content>
+    
+      <ion-footer class="footer_app" text-center (click)="terminado()">
+          <p> Terminar</p>
+          
+       </ion-footer>
+    

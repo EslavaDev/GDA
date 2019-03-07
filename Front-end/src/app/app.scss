@@ -1,0 +1,73 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.ios, .md, .wp{
+  .header_app{
+    background-color: color($colors, blue_app)
+  }
+
+  .buttons_app{
+    background-color: color($colors, orange_app);
+    color: white;
+    width: 50%;
+    height: 30%;;
+  }
+
+  .footer_app{
+    background-color: color($colors, orange_app);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 6px 10px 5px #333;
+  }
+
+  .footer_auth{
+    background-color: color($colors,gray_app);
+    box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.35);
+  }
+
+  .container_logo_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top:5%;
+  }
+
+  .img{
+    max-width: 80%;
+    // margin-top: 5%;
+  }
+
+  .container_form{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    overflow-y: auto !important;
+  }
+
+  .item_space{
+    margin-top: 5%;
+    width: 90%;
+    padding-left: 0px;
+  }
+
+  .list-ios > .item-block:first-child{
+    border-top: none;
+  }
+
+}

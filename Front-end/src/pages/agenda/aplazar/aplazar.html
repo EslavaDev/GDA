@@ -1,0 +1,59 @@
+<ion-header>
+        <ion-navbar color='primary'>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Trabajando</ion-title>
+        </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="content">
+
+        <ion-grid>
+            <ion-row>
+                <div class="content-justi">
+
+                    <ion-label>Justificar el aplazamiento:</ion-label>
+
+                    <ion-col>
+                            <ion-list class="border-textarea">
+                                    <ion-item>
+                                         <ion-textarea class="text-area"></ion-textarea>
+                                    </ion-item>
+                             </ion-list>
+
+                    </ion-col>
+
+                </div>
+
+
+                <div class="content-estado">
+
+                        <ion-label> Estado del servicio:</ion-label>
+    
+                        <ion-col>
+                                <ion-list class="border-textarea">
+                                        <ion-item>
+                                             <ion-textarea class="text-area"></ion-textarea>
+                                        </ion-item>
+                                 </ion-list>
+    
+                        </ion-col>
+    
+                 </div>
+            </ion-row>
+        </ion-grid>
+
+
+        <div class="foteer">
+
+                <ion-footer class="footer_app" text-center >
+                        <p (click)= "abrircalendario()"> Aplazar</p>
+                 </ion-footer>
+
+        </div>
+
+    </div>
+</ion-content>

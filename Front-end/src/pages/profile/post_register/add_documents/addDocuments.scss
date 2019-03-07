@@ -1,0 +1,32 @@
+page-addDocuments{
+  .container-text{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(177, 182, 185);
+
+  }
+
+  .border{
+    color: #5F6A6A;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 1px solid color($colors, orange_app) !important;
+  }
+  .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    background-image: none;
+  }
+
+  .item.item-block .item-inner{
+    border-bottom: none;
+  }
+
+  .radio .radio-checked{
+    border-color: color($colors, orange_app);
+  }
+
+  .radio .radio-inner{
+    background-color: color($colors, orange_app);
+  }
+
+
+}

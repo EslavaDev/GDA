@@ -1,0 +1,44 @@
+
+<ion-content padding class="container">
+
+  <div>
+
+      <form [formGroup]="loginform">
+
+            <div class="container_logo_header">
+                <img class="img" src="./assets/imgs/images.png"/>
+            </div>
+      
+      <ion-list class="list_item">
+          <ion-row>
+              <ion-col>
+                    <div class="container_form">
+          
+                         <ion-item class="item_space">
+                              <ion-input formControlName="email" placeholder="Correo Electronico"   type="text"></ion-input>
+                         </ion-item>
+
+                        <ion-item class="item_space">
+                              <ion-input formControlName="password" placeholder="Contraseña" type="password" ></ion-input>
+                        </ion-item>
+                    </div>
+              </ion-col>
+          </ion-row>
+      </ion-list>
+      <ion-row text-center>
+          <ion-col>
+              <button class="btn_login" (click)="login(loginform.value)" [disabled]="!loginform.valid" ion-button > Iniciar Sesión </button>
+                  <p style="padding-top: 5%;"> ¿Olvidaste tu Contraseña?  </p>
+          </ion-col>
+      </ion-row>
+  </form>
+</div>
+</ion-content>
+<ion-footer class="footer_auth">
+  <ion-row text-center>
+    <ion-col>
+        <p class="space_footer"> ¿Aun no tienes cuenta? </p>
+        <p (click)="register()" class="register_text space_footer"> REGISTRATE </p>
+    </ion-col>
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,142 @@
+<ion-header>
+        <ion-navbar  color='primary'>
+          <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+          </button>
+          <ion-title>Cierre del dia </ion-title>
+        </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <div class="content">
+
+
+
+        <div class="efecty">
+
+                <ion-grid>
+                        <ion-row>
+                        
+                        <ion-col col-12 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+
+                                <ion-card text-center>
+                                        <ion-card-header>
+                                          <span >Efectivo Cobrado</span>
+                                        </ion-card-header>
+                                        <ion-card-content>
+                                        <span>$64.000</span>
+                                        </ion-card-content>
+                                      </ion-card>
+
+
+                          </ion-col>
+
+                        
+                        </ion-row>
+                      </ion-grid>
+
+        </div>
+
+        <div class="cobrado">
+                <ion-grid>
+                        <ion-row>
+                        
+                        <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+
+                                <ion-card class="ganacia" text-center>
+                                        <ion-card-header>
+                                          <span >$45.0000</span>
+                                        </ion-card-header>
+                                        <ion-card-content>
+                                        <span>Mis ganancias</span>
+                                        </ion-card-content>
+                                      </ion-card>
+
+
+                          </ion-col>
+
+                          <ion-col col-6 col-sm-9 col-md-6 col-lg-4 col-xl-3>
+
+                                <ion-card class="complete" text-center>
+                                        <ion-card-header>
+                                          <span>2</span>
+                                        </ion-card-header>
+                                        <ion-card-content >
+                                            <span >Servicios completados</span>
+                                        </ion-card-content>
+                                      </ion-card>
+
+
+                          </ion-col>
+                        
+                        </ion-row>
+                      </ion-grid>
+
+        </div>
+
+
+
+        <div class="section-service">
+
+            <ion-label class="section_service">
+                <span class="span_service">Servicios de hoy</span>
+            </ion-label>
+
+                <ion-list (click)="showmodal()">
+                        <ion-item>
+                          <ion-avatar item-start class="avatar">
+                            <img  class="avatar_profile" src="../../../assets/imgs/user_list.png">
+                          </ion-avatar>
+                          
+                          <h2 class="name_tec">Nombre del tecnico</h2>
+
+                          <ion-grid>
+
+                             <ion-row>
+
+
+
+                                  <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 >
+                                    <div class="section-detalles">
+                                      <section class="section-deta">
+                                          <img src="../../../assets/imgs/list.png">
+                                             <h3>
+                                                 Detalles                                         
+                                            </h3>
+                                      </section>
+                                    </div>
+                                  </ion-col>
+
+
+                                  <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6>
+                                    <div class="section-dinero">
+                                          <h2>
+                                              $19.000                                         
+                                           </h2>
+                                          <h3>
+                                                Efectivo                                        
+                                          </h3>
+                                    </div>
+                                 </ion-col>
+
+                                  
+                            </ion-row>
+        
+
+                        </ion-grid>
+
+
+
+                        </ion-item>
+                      </ion-list>
+                      
+
+        </div>
+
+
+
+    </div>
+
+
+</ion-content>

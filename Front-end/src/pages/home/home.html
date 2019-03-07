@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar color='primary'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title> Inmediatos </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+  <div *ngIf="flag; else noflag">
+
+    <div *ngFor="let servi of service" >
+      <ion-grid>
+        <ion-row style="border-bottom: solid 2px rgb(88, 92, 105)">
+            <ion-col col-6 >
+              <p> {{servi.id_categoria.nameCategory}} </p>
+            </ion-col>
+            <ion-col col-6 >
+              <div>
+                <ion-label>
+               <ion-icon name="calendar"></ion-icon>
+                {{ servi.id_cliente.address}}
+              </ion-label>
+    
+              <ion-label (click)="getDetalles(servi)">
+               <ion-icon  name="menu"></ion-icon>
+               Detalles
+            </ion-label>
+    
+            </div>
+            </ion-col>
+
+        
+            <div class="btn-inmediato">
+                <button ion-button round class="btn-ion" color="danger">Cancelar</button>
+                <button ion-button color="secondary" class="btn-ion" (click)="showConfirm(servi)" round>Aceptar</button>
+                
+            </div>
+             
+            
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+
+  <ng-template #noflag> 
+
+    <div *ngIf="!flag">
+    
+      <span>Conectese para ver los servicios</span>
+    
+    </div>
+</ng-template>
+
+
+
+</ion-content>
+
+
+<ion-footer class="footer_app" text-center (click)="changeStatus()" >
+
+  <div *ngIf="!flag; else flags">
+    <p> Conectarse</p>
+    
+  </div>
+
+  <ng-template #flags>
+      <div >
+          <p> Desconectarse</p>
+      
+        </div>
+  </ng-template>
+
+</ion-footer>

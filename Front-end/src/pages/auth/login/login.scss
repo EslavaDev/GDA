@@ -1,0 +1,43 @@
+page-login{
+
+
+  .container{
+    position: initial !important;
+  }
+  .container_logo_header{
+    margin-top: 20%;
+  }
+
+  .list_item{
+    margin-top: 20%;
+    border:none;
+  }
+
+  .text-input{
+    text-align: center;
+  }
+
+  .btn_login{
+    background-color: color($colors, orange_app);
+    width: 60%;
+    color:white;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+  }
+
+  .list-ios > .item-block:first-child{
+    border:none ;
+  }
+
+  .register_text{
+    color:#5DADE2;
+    font-weight: 400;
+  }
+
+  .space_footer{
+    margin-top: 1%;
+    margin-bottom: 2%;
+  }
+
+}
