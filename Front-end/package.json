@@ -1,8 +1,7 @@
 {
-  "name": "todoak-tecnico",
+  "name": "gda",
   "version": "0.0.1",
-  "author": "Wihermes Team",
-  "homepage": "http://wihermes.com/",
+  "author": "Camilo",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
