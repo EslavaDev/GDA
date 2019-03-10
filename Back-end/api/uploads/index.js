@@ -1,9 +1,8 @@
-const { Router } = require('express');
-const controller = require('./uploads.controller');
+const { Router } = require("express");
+const controller = require("./uploads.controller");
 
 const router = new Router();
 
-router.put('/:tipo/:id', [verifyToken], controller.updates);
-
+router.put("/", [verifyToken], controller.updates);
 
 module.exports = router;
